@@ -1,0 +1,14 @@
+.carousel-image {
+    height: 900px;
+    object-fit: fill; /* Ensure the image covers the entire area */
+  }
+.carousel {
+    width: 700px; /* Set the desired width */
+    height: 900px; /* Set the desired height */
+}
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Optional: Add some margin for spacing */
+  }
