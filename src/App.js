@@ -25,6 +25,8 @@ function App() {
                 <p>Kids Teaching Code is a program that focuses on teaching computer science and math skills to kids. You can find us teaching every Monday after school at one of the Boys and Girls Club campuses.</p>
                 <br></br>
                 <br></br>
+                <br></br>
+                <br></br>
               </main>
             </>
           } />
