@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={
             <>
               <header className="App-header">
-                <h1>Welcome to My Website</h1>
+                <h1>Welcome to Kids Teaching Code</h1>
               </header>
               <div className="carousel-container">
                 <ImageCarousel />
