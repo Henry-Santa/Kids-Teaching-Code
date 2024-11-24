@@ -38,10 +38,3 @@ function App() {
 }
 
 export default App;
-
-/*
-<p></p>
-        <br></br>
-        <br></br>
-        <br></br>
-        */

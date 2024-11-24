@@ -1,14 +1,19 @@
-.carousel-image {
-    height: 900px;
-    object-fit: fill; /* Ensure the image covers the entire area */
-  }
-.carousel {
-    width: 700px; /* Set the desired width */
-    height: 900px; /* Set the desired height */
-}
 .carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0; /* Optional: Add some margin for spacing */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Centers the container and adds spacing */
+  width: 100%;
+}
+
+.carousel {
+  width: 90%; /* Set a relative width to adapt to screen size */
+  max-width: 700px; /* Limit the maximum width */
+  height: auto; /* Adjust the height automatically based on width */
+}
+
+.carousel-image {
+  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Scale to fit the carousel width */
+  object-fit: cover; /* Maintain proper scaling without distortion */
+}
