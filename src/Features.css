@@ -1,39 +1,40 @@
 .features-container {
   text-align: center;
-  padding: 20px;
+  padding: 1rem;
+  margin-bottom: 4rem; /* Add margin to prevent overlap with footer */
 }
 
 .features-grid {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   margin-top: 20px;
   flex-wrap: wrap; /* Allows wrapping for responsiveness */
+  gap: 1rem;
 }
 
 .feature-item {
-  width: 45%; /* Adjust the width as needed */
+  flex: 1 1 300px;
+  max-width: 300px;
   text-align: center;
   margin-bottom: 20px; /* Add spacing between items */
 }
 
 .feature-image {
   width: 100%;
-  height: 300px; /* Define a fixed height for cropping */
+  height: 300px; /* Ensure all images have the same height */
   max-width: 300px; /* Ensure images don’t exceed this width */
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   object-fit: cover; /* Crop the image while maintaining aspect ratio */
-  border-radius: 8px; /* Optional: Add rounded corners */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+  border-radius: 8px; /* Add border radius */
 }
 
-.feature-image.zach {
-  object-fit: cover; /* Crop the image */
-  object-position: 100% center; /* Shift the focus 60% to the right */
-  width: 100%;
-  height: 300px;
-  max-width: 300px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional */
+.feature-item h3, .feature-item h4 {
+  margin: 0.5rem 0;
+}
+
+.feature-item p {
+  color: #495057;
+  line-height: 1.6;
 }

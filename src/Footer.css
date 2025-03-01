@@ -1,0 +1,13 @@
+.footer {
+  background-color: #343a40; /* Dark background color */
+  color: white; /* White text color */
+  padding: 1rem; /* Padding for spacing */
+  text-align: center; /* Center the text */
+  position: fixed; /* Fix the footer at the bottom */
+  width: 100%; /* Full width */
+  bottom: 0; /* Align to the bottom */
+}
+
+.footer p {
+  color: white;
+}
