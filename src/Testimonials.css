@@ -2,20 +2,15 @@
   padding: 4rem 0;
   background-color: #f8f9fa;
   margin-bottom: 0;
-}
-
-.coming-soon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 150px;
+  text-align: center;
 }
 
 .coming-soon-text {
-  color: #777;
+  color: #555; /* Darker gray for better readability */
   font-size: 1.2rem;
   font-style: italic;
   text-align: center;
+  font-weight: 500;
 }
 
 .testimonial-card {

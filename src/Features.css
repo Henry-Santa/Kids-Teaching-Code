@@ -19,6 +19,7 @@
 .about-subtitle {
   font-size: 1.2rem;
   opacity: 0.9;
+  color: white;
 }
 
 .team-section {
@@ -102,15 +103,15 @@
 }
 
 .mission-section {
-  background-color: #f8f9fa;
-  padding: 3rem;
-  border-radius: 15px;
+  margin: 4rem auto;
+  max-width: 900px;
+  padding: 0 1rem;
   text-align: center;
 }
 
 .mission-section h2 {
-  color: var(--dark-color);
   margin-bottom: 1.5rem;
+  color: #333;
   font-weight: 700;
 }
 

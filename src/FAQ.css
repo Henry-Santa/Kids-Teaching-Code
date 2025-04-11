@@ -2,11 +2,17 @@
   padding: 4rem 0;
   background-color: #f8f9fa;
   margin-top: 3rem;
+  text-align: center;
 }
 
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* The accordion items themselves should remain left-aligned for readability */
+.accordion-button, .faq-answer {
+  text-align: left;
 }
 
 .faq-item {

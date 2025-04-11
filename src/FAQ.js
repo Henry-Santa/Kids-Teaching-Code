@@ -7,7 +7,7 @@ function FAQ() {
     {
       id: 1,
       question: "What age groups do you teach?",
-      answer: "Our program is designed for students between the ages of 8-14. We tailor our teaching methods and content to be age-appropriate while still challenging and engaging."
+      answer: "Our program is designed for students between the ages of 8-11. We tailor our teaching methods and content to be age-appropriate while still challenging and engaging."
     },
     {
       id: 2,
@@ -17,17 +17,17 @@ function FAQ() {
     {
       id: 3,
       question: "What programming languages do you teach?",
-      answer: "We start with block-based coding using platforms like Scratch to teach fundamental concepts. As students progress, we introduce text-based languages like Python and JavaScript."
+      answer: "We teach block-based coding using platforms like Scratch to teach fundamental concepts."
     },
     {
       id: 4,
       question: "How can my child join the program?",
-      answer: "Students who are members of the Boys and Girls Club can join our weekly sessions. If you're interested, please contact us through the form on our homepage or speak with the Boys and Girls Club staff."
+      answer: "Students who are members of the Boys and Girls Club can join our weekly sessions."
     },
     {
       id: 5,
       question: "Do you provide computers or should students bring their own?",
-      answer: "We utilize the computer lab at the Boys and Girls Club, so students don't need to bring their own devices. However, if they have projects they'd like to work on at home, we can provide resources for that as well."
+      answer: "We use the chromebooks provided by Greenwich Schools. Students can bring their own laptops if they prefer."
     }
   ];
 

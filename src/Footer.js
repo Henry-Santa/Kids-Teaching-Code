@@ -28,7 +28,6 @@ function Footer() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
               {/* Removed Resources link */}
-              <li><a href="#">Contact</a></li>
             </ul>
           </Col>
           
