@@ -70,6 +70,7 @@ function Features() {
         
         <div className="mission-section">
           <h2>Our Vision</h2>
+          
           <p>
             At Kids Teaching Code, we believe that every child deserves access to quality computer science education. 
             Our peer-to-peer teaching model creates a supportive environment where students can learn from relatable 

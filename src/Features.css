@@ -116,9 +116,11 @@
 }
 
 .mission-section p {
-  font-size: 1.1rem;
+  color: #444; /* Darker gray color */
   line-height: 1.8;
-  max-width: 800px;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+max-width: 800px;
   margin: 0 auto;
 }
 
