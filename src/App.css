@@ -1,108 +1,161 @@
 
 
+/* Modern color palette and base styling */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --dark-color: #2c3e50;
+  --light-color: #ecf0f1;
+  --accent-color: #f39c12;
+  --text-color: #333333;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 html, body {
-  height: 100%; /* Ensure the body covers the viewport */
+  height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensure the app container covers the entire viewport */
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--light-color);
 }
 
-.App-header {
-  padding: 1rem;
-  text-align: center;
-}
-
-.App-main {
-  flex: 1; /* Make the main content area take up available space */
-  padding: 1rem;
-}
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 1rem;
-  margin-top: auto; /* Push the footer to the bottom when content is small */
-}
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-header.App-header {
-  background-color: #282c34;
+.App-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
   color: white;
   text-align: center;
-  padding: 1.5rem;
+  padding: 2.5rem 1rem;
+  box-shadow: var(--shadow);
 }
 
-.carousel-container {
-  margin: 1rem auto;
-  width: 90%;
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.App-main {
+  flex: 1;
+  padding: 2rem;
   max-width: 1200px;
-  display: flex;
-  justify-content: center; /* Centers the carousel horizontally */
-  align-items: center;    /* Ensures proper vertical alignment */
-}
-
-
-main.App-main {
-  padding: 1rem;
-  text-align: center;
-}
-
-main.App-main p {
   margin: 0 auto;
-  max-width: 800px;
-  line-height: 1.6;
+  width: 90%;
 }
 
-/* Footer styles */
-footer {
-  background-color: #f1f1f1;
+.App-main p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
   text-align: center;
-  padding: 1rem;
-  margin-top: auto; /* Push the footer to the bottom when content is small */
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  header.App-header {
-    font-size: 1.5rem;
-    padding: 1rem;
+  .App-header h1 {
+    font-size: 2rem;
   }
-
-  .carousel-container {
-    width: 100%;
-  }
-
-  main.App-main p {
+  
+  .App-main p {
     font-size: 1rem;
     padding: 0 1rem;
-  }
-
-  footer {
-    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
-  header.App-header {
-    font-size: 1.2rem;
+  .App-header h1 {
+    font-size: 1.5rem;
   }
+  
+  .App-main p {
+    font-size: 0.95rem;
+  }
+}
 
-  main.App-main p {
-    font-size: 0.9rem;
-  }
+
+/* Add these styles to your existing App.css */
+
+.header-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.intro-section {
+  margin-bottom: 3rem;
+}
+
+.features-section {
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.cta-section {
+  text-align: center;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #3498db20, #2ecc7120);
+  border-radius: 10px;
+}
+
+.cta-button {
+  background: var(--primary-color);
+  border: none;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: var(--dark-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
