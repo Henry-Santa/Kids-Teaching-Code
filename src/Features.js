@@ -49,7 +49,7 @@ function Features() {
                   <img src="/images/Zach.png" alt="Zach Bostox" className="team-image zach" loading="lazy"/>
                 </div>
                 <Card.Body>
-                  <Card.Title className="team-name">Zach Bostox</Card.Title>
+                  <Card.Title className="team-name">Zach Bostock</Card.Title>
                   <Card.Subtitle className="team-role">Co-Founder</Card.Subtitle>
                   <Card.Text className="team-bio">
                     Zach is both a dedicated programmer and passionate theater student. His interest in 
