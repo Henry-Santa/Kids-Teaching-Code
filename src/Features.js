@@ -24,18 +24,14 @@ function Features() {
             <Col lg={6}>
               <Card className="team-card">
                 <div className="team-image-container">
-                  <picture>
-                    <source srcSet="/images/optimized/Henry.webp" type="image/webp" />
-                    <source srcSet="/images/optimized/Henry.png" type="image/png" />
-                    <img 
-                      src="/images/optimized/Henry.png" 
-                      alt="Henry Santangelo, Founder of Kids Teaching Code, passionate about bringing computer science education to young learners" 
-                      className="team-image" 
-                      loading="lazy"
-                      width="300"
-                      height="300"
-                    />
-                  </picture>
+                  <img 
+                    src="/images/Henry.png" 
+                    alt="Henry Santangelo, Founder of Kids Teaching Code, passionate about bringing computer science education to young learners" 
+                    className="team-image" 
+                    loading="lazy"
+                    width="300"
+                    height="300"
+                  />
                 </div>
                 <Card.Body>
                   <Card.Title className="team-name">Henry Santangelo</Card.Title>
@@ -57,18 +53,14 @@ function Features() {
             <Col lg={6}>
               <Card className="team-card">
                 <div className="team-image-container">
-                  <picture>
-                    <source srcSet="/images/optimized/Zach.webp" type="image/webp" />
-                    <source srcSet="/images/optimized/Zach.png" type="image/png" />
-                    <img 
-                      src="/images/optimized/Zach.png" 
-                      alt="Zach Bostock, Co-Founder of Kids Teaching Code, combining his passion for programming and theater" 
-                      className="team-image zach" 
-                      loading="lazy"
-                      width="300"
-                      height="300"
-                    />
-                  </picture>
+                  <img 
+                    src="/images/Zach.png" 
+                    alt="Zach Bostock, Co-Founder of Kids Teaching Code, combining his passion for programming and theater" 
+                    className="team-image zach" 
+                    loading="lazy"
+                    width="300"
+                    height="300"
+                  />
                 </div>
                 <Card.Body>
                   <Card.Title className="team-name">Zach Bostock</Card.Title>

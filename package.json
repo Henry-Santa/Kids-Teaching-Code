@@ -7,7 +7,6 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
-    "cheerio": "^1.0.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
@@ -16,20 +15,14 @@
     "react-router-bootstrap": "^0.26.3",
     "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
-    "sharp": "^0.34.1",
-    "sitemap": "^8.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run optimize-images && npm run generate-social && npm run generate-sitemap && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "serve -s build",
-    "optimize-images": "node scripts/optimizeImages.js",
-    "generate-sitemap": "node scripts/generateSitemap.js",
-    "generate-social": "node scripts/generateSocialImages.js",
-    "check-seo": "node scripts/checkSEO.js"
+    "serve": "serve -s build"
   },
   "eslintConfig": {
     "extends": [
