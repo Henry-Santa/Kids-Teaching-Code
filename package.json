@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && npm run optimize-images && npm run generate-social && npm run generate-sitemap",
+    "build": "npm run optimize-images && npm run generate-social && npm run generate-sitemap && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "serve -s build",
