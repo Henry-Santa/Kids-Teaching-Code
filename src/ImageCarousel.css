@@ -19,6 +19,12 @@
   width: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-image.loaded {
+  opacity: 1;
 }
 
 .carousel-caption {
@@ -49,6 +55,15 @@
   margin: 0 5px;
 }
 
+.carousel-skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
 @media (max-width: 768px) {
   .carousel-image {
     height: 350px;
@@ -71,5 +86,17 @@
 @media (max-width: 480px) {
   .carousel-image {
     height: 250px;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .carousel-image {
+    transition: none;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    transition: none;
   }
 }

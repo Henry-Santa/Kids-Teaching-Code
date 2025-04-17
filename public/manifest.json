@@ -1,25 +1,47 @@
 {
   "short_name": "Kids Teaching Code",
   "name": "Kids Teaching Code | Student-led Coding Education",
+  "description": "A student-led initiative bringing computer science education to young learners at the Boys and Girls Club of Greenwich",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "purpose": "any"
     },
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#3498db",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["education", "kids", "coding", "programming"],
+  "shortcuts": [
+    {
+      "name": "About Us",
+      "url": "/about",
+      "description": "Learn more about our teaching team"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/optimized/1.webp",
+      "type": "image/webp",
+      "sizes": "1000x500",
+      "platform": "wide",
+      "label": "Students learning to code"
+    }
+  ]
 }

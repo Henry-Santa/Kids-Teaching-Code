@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Accordion, Container } from 'react-bootstrap';
 import './FAQ.css';
 
@@ -17,17 +17,17 @@ function FAQ() {
     {
       id: 3,
       question: "What programming languages do you teach?",
-      answer: "We teach block-based coding using platforms like Scratch to teach fundamental concepts."
+      answer: "We teach block-based coding using platforms like Scratch to teach fundamental programming concepts in an engaging and visual way."
     },
     {
       id: 4,
       question: "How can my child join the program?",
-      answer: "Students who are members of the Boys and Girls Club can join our weekly sessions."
+      answer: "Students who are members of the Boys and Girls Club can join our weekly sessions, which take place every Monday after school."
     },
     {
       id: 5,
       question: "Do you provide computers or should students bring their own?",
-      answer: "We use the chromebooks provided by Greenwich Schools. Students can bring their own laptops if they prefer."
+      answer: "We use the Chromebooks provided by Greenwich Schools. Students can bring their own laptops if they prefer, but it's not required."
     }
   ];
 
@@ -36,18 +36,32 @@ function FAQ() {
       <Container>
         <h2 className="section-title">Frequently Asked Questions</h2>
         <div className="faq-container">
-          <Accordion defaultActiveKey="0" flush>
-            {faqs.map((faq, index) => (
-              <Accordion.Item eventKey={index.toString()} key={faq.id} className="faq-item">
-                <Accordion.Header className="faq-question">
-                  {faq.question}
-                </Accordion.Header>
-                <Accordion.Body className="faq-answer">
-                  {faq.answer}
-                </Accordion.Body>
-              </Accordion.Item>
-            ))}
-          </Accordion>
+          <div itemScope itemType="https://schema.org/FAQPage">
+            <Accordion defaultActiveKey="0" flush>
+              {faqs.map((faq, index) => (
+                <Accordion.Item 
+                  eventKey={index.toString()} 
+                  key={faq.id} 
+                  className="faq-item"
+                  itemScope 
+                  itemProp="mainEntity" 
+                  itemType="https://schema.org/Question"
+                >
+                  <Accordion.Header className="faq-question">
+                    <span itemProp="name">{faq.question}</span>
+                  </Accordion.Header>
+                  <Accordion.Body 
+                    className="faq-answer"
+                    itemScope 
+                    itemProp="acceptedAnswer" 
+                    itemType="https://schema.org/Answer"
+                  >
+                    <div itemProp="text">{faq.answer}</div>
+                  </Accordion.Body>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+          </div>
         </div>
       </Container>
     </section>

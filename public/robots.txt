@@ -2,4 +2,18 @@
 User-agent: *
 Allow: /
 
+# Prevent crawling of certain file types
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*?*
+
+# Rate limiting for specific bots
+User-agent: AdsBot-Google
+Crawl-delay: 1
+
+# Point to sitemap
 Sitemap: https://kidsteachingcode.org/sitemap.xml
+
+# Point to additional resources
+Host: https://kidsteachingcode.org

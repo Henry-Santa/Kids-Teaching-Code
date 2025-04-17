@@ -5,6 +5,8 @@ import './animations.css'; // Import animations
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
+import { initializePerformanceTracking } from './utils/performance';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +14,12 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+// Register service worker for PWA support
+serviceWorkerRegistration.register();
+
+// Initialize performance monitoring
+initializePerformanceTracking();
 
 // Add scroll animation functionality after the DOM is fully loaded
 window.addEventListener('DOMContentLoaded', () => {
@@ -41,4 +49,15 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-reportWebVitals();
+// Report web vitals
+reportWebVitals(metric => {
+  // Send to analytics
+  console.log(metric);
+  if (window.gtag) {
+    window.gtag('event', metric.name, {
+      value: metric.value,
+      metric_id: metric.id,
+      metric_delta: metric.delta,
+    });
+  }
+});

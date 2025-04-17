@@ -4,7 +4,6 @@ import './Features.css';
 import FAQ from './FAQ';
 
 function Features() {
-  // Force all stagger items to be visible when component mounts
   useEffect(() => {
     document.querySelectorAll('.stagger-item').forEach(item => {
       item.classList.add('visible');
@@ -12,19 +11,31 @@ function Features() {
   }, []);
 
   return (
-    <div className="about-container">
-      <div className="about-header">
-        <h1>About Us</h1>
-        <p className="about-subtitle">Meet the team behind Kids Teaching Code</p>
-      </div>
+    <article className="about-container">
+      <header className="about-header">
+        <h1>Meet Our Team</h1>
+        <p className="about-subtitle">Passionate student mentors bringing coding education to kids</p>
+      </header>
       
       <Container>
-        <div className="team-section">
+        <section className="team-section">
+          <h2 className="section-title">Teaching Team</h2>
           <Row className="g-4">
             <Col lg={6}>
               <Card className="team-card">
                 <div className="team-image-container">
-                  <img src="/images/Henry.png" alt="Henry Santangelo" className="team-image" loading="lazy"/>
+                  <picture>
+                    <source srcSet="/images/optimized/Henry.webp" type="image/webp" />
+                    <source srcSet="/images/optimized/Henry.png" type="image/png" />
+                    <img 
+                      src="/images/optimized/Henry.png" 
+                      alt="Henry Santangelo, Founder of Kids Teaching Code, passionate about bringing computer science education to young learners" 
+                      className="team-image" 
+                      loading="lazy"
+                      width="300"
+                      height="300"
+                    />
+                  </picture>
                 </div>
                 <Card.Body>
                   <Card.Title className="team-name">Henry Santangelo</Card.Title>
@@ -46,7 +57,18 @@ function Features() {
             <Col lg={6}>
               <Card className="team-card">
                 <div className="team-image-container">
-                  <img src="/images/Zach.png" alt="Zach Bostox" className="team-image zach" loading="lazy"/>
+                  <picture>
+                    <source srcSet="/images/optimized/Zach.webp" type="image/webp" />
+                    <source srcSet="/images/optimized/Zach.png" type="image/png" />
+                    <img 
+                      src="/images/optimized/Zach.png" 
+                      alt="Zach Bostock, Co-Founder of Kids Teaching Code, combining his passion for programming and theater" 
+                      className="team-image zach" 
+                      loading="lazy"
+                      width="300"
+                      height="300"
+                    />
+                  </picture>
                 </div>
                 <Card.Body>
                   <Card.Title className="team-name">Zach Bostock</Card.Title>
@@ -60,28 +82,42 @@ function Features() {
                   </Card.Text>
                   <div className="social-links">
                     <a href="https://github.com/Sashazach" target="_blank" rel="noopener noreferrer" className="social-link"><i className="fab fa-github"></i></a>
-                    {/* Removed LinkedIn for Zach */}
                   </div>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
-        </div>
+        </section>
         
-        <div className="mission-section">
-          <h2>Our Vision</h2>
-          
-          <p>
-            At Kids Teaching Code, we believe that every child deserves access to quality computer science education. 
-            Our peer-to-peer teaching model creates a supportive environment where students can learn from relatable 
-            mentors who understand the challenges of learning to code. We aim to inspire the next generation of 
-            innovators, problem-solvers, and digital creators.
-          </p>
-        </div>
+        <section className="mission-section">
+          <h2>Our Vision & Impact</h2>
+          <div itemScope itemType="https://schema.org/EducationalOrganization">
+            <p itemProp="description">
+              At Kids Teaching Code, we believe that every child deserves access to quality computer science education. 
+              Our peer-to-peer teaching model creates a supportive environment where students can learn from relatable 
+              mentors who understand the challenges of learning to code. We aim to inspire the next generation of 
+              innovators, problem-solvers, and digital creators.
+            </p>
+            <div className="mission-stats">
+              <div className="stat-item">
+                <strong>Weekly Sessions</strong>
+                <p>Every Monday after school</p>
+              </div>
+              <div className="stat-item">
+                <strong>Location</strong>
+                <p itemProp="location">Boys and Girls Club of Greenwich</p>
+              </div>
+              <div className="stat-item">
+                <strong>Program Focus</strong>
+                <p itemProp="knowsAbout">Computer Programming, Problem Solving, Critical Thinking</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </Container>
       
       <FAQ />
-    </div>
+    </article>
   );
 }
 
