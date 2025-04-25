@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Kids Teaching Code
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kids Teaching Code is a student-led initiative that provides in-person coding lessons to young learners at the Boys and Girls Club of Greenwich. Our mission is to make computer science education accessible, engaging, and fun for children.
 
-## Available Scripts
+## About the Program
 
-In the project directory, you can run:
+- **Location**: Boys and Girls Club of Greenwich
+- **Schedule**: Every Monday after school
+- **Target Audience**: Students aged 8-11
+- **Focus Areas**: Coding fundamentals, problem-solving, and creative projects
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Interactive Lessons**: Hands-on coding sessions tailored for beginners.
+- **Peer-to-Peer Learning**: Students learn from relatable mentors who are passionate about coding.
+- **Fun Challenges**: Activities designed to build critical thinking and problem-solving skills.
+- **Supportive Environment**: A welcoming space for kids to explore and grow their interest in technology.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+No prior coding experience is required. Chromebooks are provided by Greenwich Schools, but students can bring their own laptops if preferred.
 
-### `npm run build`
+### How to Join
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Students who are members of the Boys and Girls Club can attend our weekly sessions. For more information, contact us at [hsantangelo26@gcds.net](mailto:hsantangelo26@gcds.net) or [zbostock26@gcds.net](mailto:zbostock26@gcds.net).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Meet the Founders
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Henry Santangelo**: Founder of Kids Teaching Code, passionate about bridging the gap in computer science education.
+- **Zach Bostock**: Co-Founder, combining his love for programming and theater to inspire young learners.
 
-### `npm run eject`
+## Contact Us
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Email**: [hsantangelo26@gcds.net](mailto:hsantangelo26@gcds.net) / [zbostock26@gcds.net](mailto:zbostock26@gcds.net)
+- **Instagram**: [@kidsteachingcode](https://www.instagram.com/kidsteachingcode)
+- **GitHub**: [Kids Teaching Code Repository](https://github.com/Henry-Santa/Kids-Teaching-Code)
