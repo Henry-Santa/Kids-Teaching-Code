@@ -1,40 +1,202 @@
-.features-container {
+.about-container {
+  padding: 2rem 0 4rem;
+}
+
+.about-header {
   text-align: center;
-  padding: 1rem;
-  margin-bottom: 4rem; /* Add margin to prevent overlap with footer */
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+  color: white;
+  margin-bottom: 3rem;
 }
 
-.features-grid {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 20px;
-  flex-wrap: wrap; /* Allows wrapping for responsiveness */
-  gap: 1rem;
-}
-
-.feature-item {
-  flex: 1 1 300px;
-  max-width: 300px;
-  text-align: center;
-  margin-bottom: 20px; /* Add spacing between items */
-}
-
-.feature-image {
-  width: 100%;
-  height: 300px; /* Ensure all images have the same height */
-  max-width: 300px; /* Ensure images don’t exceed this width */
+.about-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 1rem;
-  object-fit: cover; /* Crop the image while maintaining aspect ratio */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
-  border-radius: 8px; /* Add border radius */
 }
 
-.feature-item h3, .feature-item h4 {
-  margin: 0.5rem 0;
+.about-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: white;
 }
 
-.feature-item p {
-  color: #495057;
-  line-height: 1.6;
+.team-section {
+  margin-bottom: 4rem;
+}
+
+.team-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-image-container {
+  height: 300px;
+  overflow: hidden;
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-image.zach {
+  object-position: center;
+}
+
+.team-card:hover .team-image {
+  transform: scale(1.05);
+}
+
+.team-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.team-role {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.team-bio {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.mission-section {
+  margin: 4rem auto;
+  max-width: 900px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.mission-section h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.mission-section p {
+  color: #444; /* Darker gray color */
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+
+}
+
+.stat-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  color: #555;
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-header {
+    padding: 2rem 1rem;
+  }
+  
+  .about-header h1 {
+    font-size: 2rem;
+  }
+  
+  .team-image-container {
+    height: 200px;
+  }
+  
+  .mission-section {
+    padding: 2rem;
+  }
+  
+  .mission-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    padding: 1rem;
+  }
+  
+  .stat-item strong {
+    font-size: 1.1rem;
+  }
+  
+  .team-bio {
+    font-size: 0.95rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-card,
+  .stat-item,
+  .social-link {
+    transition: none;
+  }
 }
