@@ -41,7 +41,7 @@ function Footer() {
         
         <Row className="footer-bottom">
           <Col>
-            <p>&copy; {currentYear} Kids Teaching Code | Created by Henry Santangelo and Zach Bostox</p>
+            <p>&copy; {currentYear} Kids Teaching Code | Created by Henry Santangelo and Zach Bostock</p>
           </Col>
         </Row>
       </Container>
